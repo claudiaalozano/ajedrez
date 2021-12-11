@@ -19,3 +19,10 @@ torre_negra= chr(0x265C)
 alfil_negro=chr(0x265D)
 peon_negro=chr(0x265F)
 
+#BLANCOS
+rey_blanco= chr(0x2654)
+reina_banco=chr(0x2655)
+caballo_blanco=chr(0x2658)
+torre_blanco=chr(0x2656)
+alfin_blanco=chr(0x2657)
+peon_blanco=chr(0x2659)
