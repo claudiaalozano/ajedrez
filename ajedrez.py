@@ -26,3 +26,14 @@ caballo_blanco=chr(0x2658)
 torre_blanco=chr(0x2656)
 alfin_blanco=chr(0x2657)
 peon_blanco=chr(0x2659)
+
+#Posición inicial de las fichas
+#NEGROS
+(tablero[5])[0]= rey_negro
+(tablero[4])[0]= reina_negro
+(tablero[1])[0]= torre_negra
+(tablero[2])[0]= caballo_negro
+(tablero[3])[0]= alfil_negro
+(tablero[6])[0]= alfil_negro
+(tablero[7])[0]= caballo_negro
+(tablero[8])[0]= torre_negra
