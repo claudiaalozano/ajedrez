@@ -63,3 +63,15 @@ peon_blanco=chr(0x2659)
 (tablero[6])[6]= peon_blanco
 (tablero[7])[6]= peon_blanco
 (tablero[8])[6]= peon_blanco
+
+#Movimientos fichas.
+print ("Comienza la partida.")
+while True:
+    ficha= print(input("¿Que ficha desea mover?"))
+    i=print(input("¿En que fila está la ficha que deseas mover?:"))
+    j=print(input("¿En que columna está la ficha que deseas mover?:"))
+    (tablero[j])[i] = ficha
+    
+    i_= print(input("¿A qué fila desea moverla?"))
+    j_ = print (input("¿A qué columna desa moverla?"))
+    (tablero[j_])[i_]= ficha
