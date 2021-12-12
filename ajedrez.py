@@ -29,49 +29,52 @@ peon_blanco=chr(0x2659)
 
 #Posición inicial de las fichas
 #NEGROS
-(tablero[5])[0]= rey_negro
-(tablero[4])[0]= reina_negro
-(tablero[1])[0]= torre_negra
-(tablero[2])[0]= caballo_negro
-(tablero[3])[0]= alfil_negro
-(tablero[6])[0]= alfil_negro
-(tablero[7])[0]= caballo_negro
-(tablero[8])[0]= torre_negra
+(tablero[0])[5]= rey_negro
+(tablero[0])[4]= reina_negro
+(tablero[0])[1]= torre_negra
+(tablero[0])[2]= caballo_negro
+(tablero[0])[3]= alfil_negro
+(tablero[0])[6]= alfil_negro
+(tablero[0])[7]= caballo_negro
+(tablero[0])[8]= torre_negra
 (tablero[1])[1]= peon_negro
-(tablero[2])[1]= peon_negro
-(tablero[3])[1]= peon_negro
-(tablero[4])[1]= peon_negro
-(tablero[5])[1]= peon_negro
-(tablero[6])[1]= peon_negro
-(tablero[7])[1]= peon_negro
-(tablero[8])[1]= peon_negro
+(tablero[1])[2]= peon_negro
+(tablero[1])[3]= peon_negro
+(tablero[1])[4]= peon_negro
+(tablero[1])[5]= peon_negro
+(tablero[1])[6]= peon_negro
+(tablero[1])[7]= peon_negro
+(tablero[1])[8]= peon_negro
 
 #BLANCOS
-(tablero[1])[7]= torre_blanco
-(tablero[2])[7]= caballo_blanco
-(tablero[3])[7]= alfin_blanco
-(tablero[4])[7]=reina_banco
-(tablero[5])[7]= rey_blanco
-(tablero[6])[7]= alfin_blanco
+(tablero[7])[1]= torre_blanco
+(tablero[7])[2]= caballo_blanco
+(tablero[7])[3]= alfin_blanco
+(tablero[7])[4]=reina_banco
+(tablero[7])[5]= rey_blanco
+(tablero[7])[6]= alfin_blanco
 (tablero[7])[7]= caballo_blanco
-(tablero[8])[7]= torre_blanco
-(tablero[1])[6]= peon_blanco
-(tablero[2])[6]= peon_blanco
-(tablero[3])[6]= peon_blanco
-(tablero[4])[6]= peon_blanco
-(tablero[5])[6]= peon_blanco
+(tablero[7])[8]= torre_blanco
+(tablero[6])[1]= peon_blanco
+(tablero[6])[2]= peon_blanco
+(tablero[6])[3]= peon_blanco
+(tablero[6])[4]= peon_blanco
+(tablero[6])[5]= peon_blanco
 (tablero[6])[6]= peon_blanco
-(tablero[7])[6]= peon_blanco
-(tablero[8])[6]= peon_blanco
+(tablero[6])[7]= peon_blanco
+(tablero[6])[8]= peon_blanco
 
 #Movimientos fichas.
+
 print ("Comienza la partida.")
-while True:
-    ficha= print(input("¿Que ficha desea mover?"))
-    i=print(input("¿En que fila está la ficha que deseas mover?:"))
-    j=print(input("¿En que columna está la ficha que deseas mover?:"))
-    (tablero[j])[i] = ficha
-    
-    i_= print(input("¿A qué fila desea moverla?"))
-    j_ = print (input("¿A qué columna desa moverla?"))
-    (tablero[j_])[i_]= ficha
+movimiento = 0
+if movimiento == 0:
+    while True:
+        ficha= print(input("¿Que ficha desea mover?"))
+        i=print(input("¿En que fila está la ficha que deseas mover?:"))
+        j=print(input("¿En que columna está la ficha que deseas mover?:"))
+        (tablero[i])[j] = ficha
+        movimiento= movimiento + 1
+        i_= print(input("¿A qué fila desea moverla?"))
+        j_ = print (input("¿A qué columna desa moverla?"))
+        (tablero[i_])[j_]= ficha
