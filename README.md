@@ -87,3 +87,7 @@ if movimiento == 0:
         (tablero[i_])[j_]= ficha
         (tablero[i])[j]= " "
         print(tablero) ```
+        
+        ESQUEMA DE AJEDREZ:
+        ![FIGMA AJEDREZ](https://user-images.githubusercontent.com/91722847/145731197-aa9f34bc-4ad4-4d27-8f23-a9f77069c847.png)
+
